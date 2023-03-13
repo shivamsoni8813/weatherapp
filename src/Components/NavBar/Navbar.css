@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    width: 91vw;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.navbarWrapper{
+    width: 40vw;
+}
+.navbarWrapper ul
+{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbarWrapper ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin: 0rem 1rem;
+}
+

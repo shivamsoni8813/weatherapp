@@ -1,0 +1,124 @@
+.newsContainer
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.news
+{
+    padding-top: 5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.newsCardWrapper
+{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+.headings
+{
+    padding-left: 25rem;
+}
+.newsCard{
+    width: 18rem;
+    height: 20rem;
+    background-color: black;
+    border-radius: 1rem;
+
+}
+.cardImg{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.newsCard>p{
+    position: relative;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.newsCard>img:hover{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.readMore{
+    opacity: 0;
+    
+}
+.newsCard:hover .readMore{
+    opacity: 1;
+    position: relative;
+    transition: 0.4s;
+    bottom: 70%;
+    animation-name: readmore;
+    animation-iteration-count: 1;
+
+}
+@keyframes readmore {
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 70%;
+
+    }
+}
+.footer{
+    width: 90vw;
+}
+
+@media screen and (max-width: 480px) {
+    .news
+{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    overflow: visible;
+   
+}
+    .newsCard {
+        width: 18rem;
+        height: 20rem;
+        background-color: black;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    .cardImg {
+        width: 18rem;
+        height: 20rem;
+        border-radius: 1rem;
+    }
+    .newsCardWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+    .newsContainer {
+        width: 100vw;
+        height: 185vh;
+        overflow: hidden;
+
+    }
+    .headings {
+        padding-left: 0rem;
+    }
+}
